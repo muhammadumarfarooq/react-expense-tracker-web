@@ -1,20 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-// Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-// Fontawesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
-// SASS
 import "./styles/main.scss";
-
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
