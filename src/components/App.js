@@ -1,10 +1,13 @@
 import React from 'react';
+import { ExpenseProvider } from "../context/expense/ExpenseState";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Expense Tracker application...</h1>
-    </div>
+    <ExpenseProvider>
+      <div className="App">
+        <h1>Expense Tracker application...</h1>
+      </div>
+    </ExpenseProvider>
   );
 }
 
