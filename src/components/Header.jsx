@@ -1,4 +1,5 @@
 import React from 'react';
+import expenseImg from '../assets/expenses.png';
 
 const Header = () => {
     return (
@@ -11,7 +12,10 @@ const Header = () => {
             backgroundColor: '#3a1960',
             color: '#fff'
         }}>
-            <h2 style={{textAlign: 'center', letterSpacing: 1}}>Expense Tracker</h2>
+            <div style={{display: "flex", justifyContent: 'center', alignItems: 'center'}}>
+                <img style={{width: 40, height: 'auto', marginRight: 20}} src={expenseImg} alt='Expense'/>
+                <h2 style={{letterSpacing: 1, margin: 0}}>Expense Tracker</h2>
+            </div>
         </nav>
     );
 };
