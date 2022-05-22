@@ -10,6 +10,7 @@ function App() {
   return (
     <ExpenseProvider>
       <Header/>
+
       <div className="container">
         <Balance/>
         <IncomeExpenses/>
